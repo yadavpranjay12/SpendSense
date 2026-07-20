@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat : added jpa repositories" />
+    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat : added data transfer objects" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +31,9 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -87,13 +90,38 @@
       <option name="project" value="LOCAL" />
       <updated>1784571676438</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat : added jpa repositories">
+      <option name="closed" value="true" />
+      <created>1784571732336</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784571732336</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat : added jpa repositories">
+      <option name="closed" value="true" />
+      <created>1784571815617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784571815618</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat : added data transfer objects">
+      <option name="closed" value="true" />
+      <created>1784571953102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784571953102</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : initialise project and set up flyway with postgresql" />
     <MESSAGE value="feat : set up flyway with postgresql - added domain models" />
     <MESSAGE value="feat : added jpa repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : added jpa repositories" />
+    <MESSAGE value="feat : added data transfer objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : added data transfer objects" />
   </component>
 </project>
