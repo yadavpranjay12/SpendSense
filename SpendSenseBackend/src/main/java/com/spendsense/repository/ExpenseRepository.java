@@ -1,0 +1,33 @@
+package com.spendsense.repository;
+
+import com.spendsense.model.Expense;
+import com.spendsense.model.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+@Repository
+public interface ExpenseRepository extends JpaRepository<Expense, UUID> {
+
+    // Original methods
+    Page<Expense> findByUser(User user, Pageable pageable);
+    List<Expense> findByUser(User user);
+    Optional<Expense> findByIdAndUser(UUID id, User user);
+
+    // --- NEW METHODS (Replacing QExpenseRepository) ---
+
+    // Replaces getLastFew(size, username)
+    List<Expense> findByUserUsernameOrderByCreationTimeDesc(String username, Pageable pageable);
+
+    // Replaces getLastFewByExpenseGroupId(expenseGroupId, size)
+    List<Expense> findByExpenseGroupIdOrderByCreationTimeDesc(UUID expenseGroupId, Pageable pageable);
+
+    // Replaces getExpensesForYesterday(username)
+    List<Expense> findByUserUsernameAndCreationTimeBetweenOrderByCreationTimeDesc(String username, LocalDateTime start, LocalDateTime end);
+}
