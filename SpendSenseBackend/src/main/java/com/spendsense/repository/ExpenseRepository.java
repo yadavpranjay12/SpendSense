@@ -15,19 +15,17 @@ import java.util.UUID;
 @Repository
 public interface ExpenseRepository extends JpaRepository<Expense, UUID> {
 
-    // Original methods
     Page<Expense> findByUser(User user, Pageable pageable);
     List<Expense> findByUser(User user);
     Optional<Expense> findByIdAndUser(UUID id, User user);
 
-    // --- NEW METHODS (Replacing QExpenseRepository) ---
 
-    // Replaces getLastFew(size, username)
+
+
     List<Expense> findByUserUsernameOrderByCreationTimeDesc(String username, Pageable pageable);
 
-    // Replaces getLastFewByExpenseGroupId(expenseGroupId, size)
+
     List<Expense> findByExpenseGroupIdOrderByCreationTimeDesc(UUID expenseGroupId, Pageable pageable);
 
-    // Replaces getExpensesForYesterday(username)
-    List<Expense> findByUserUsernameAndCreationTimeBetweenOrderByCreationTimeDesc(String username, LocalDateTime start, LocalDateTime end);
+   List<Expense> findByUserUsernameAndCreationTimeBetweenOrderByCreationTimeDesc(String username, LocalDateTime start, LocalDateTime end);
 }
