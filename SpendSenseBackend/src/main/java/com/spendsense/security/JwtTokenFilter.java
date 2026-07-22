@@ -16,8 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static ch.qos.logback.core.util.OptionHelper.isEmpty;
-
 @Component
 public class JwtTokenFilter extends OncePerRequestFilter {
 
@@ -32,7 +30,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         final String header = request.getHeader(HttpHeaders.AUTHORIZATION);
-        if (isEmpty(header) || !header.startsWith("Bearer ")) {
+        if (header == null || header.isEmpty() || !header.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
             return;
         }

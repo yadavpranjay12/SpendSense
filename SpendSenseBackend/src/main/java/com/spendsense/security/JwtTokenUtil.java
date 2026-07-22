@@ -11,20 +11,19 @@ import java.util.Date;
 @Component
 public class JwtTokenUtil {
 
-    @Value("ExpenseTracker")
+    @Value("${app.name:SpendSense}")
     private String APP_NAME;
 
-    @Value("someSecret")
-    public String SECRET;
+    @Value("${jwt.secret:someSecretKeyThatIsVeryLongAndSecureForSpendSenseApp123!}")
+    private String SECRET;
 
-    @Value("1800000")
+    @Value("${jwt.expires_in:1800000}")
     private int EXPIRES_IN;
 
     @Value("Authorization")
     private String AUTH_HEADER;
 
     private final SignatureAlgorithm SIGNATURE_ALGORITHM = SignatureAlgorithm.HS512;
-
 
     public String generateToken(User user) {
         return Jwts.builder()
@@ -33,100 +32,62 @@ public class JwtTokenUtil {
                 .claim("role", user.getAuthorities())
                 .setIssuedAt(new Date())
                 .setExpiration(generateExpirationDate())
-                .signWith(SIGNATURE_ALGORITHM, SECRET).compact();
+                .signWith(SIGNATURE_ALGORITHM, SECRET.getBytes()).compact();
     }
 
     private Date generateExpirationDate() {
-        return new Date(new Date().getTime() + EXPIRES_IN);
+        return new Date(System.currentTimeMillis() + EXPIRES_IN);
     }
 
     public String getToken(HttpServletRequest request) {
-        String authHeader = getAuthHeaderFromHeader(request);
-
+        String authHeader = request.getHeader(AUTH_HEADER);
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             return authHeader.substring(7);
         }
-
         return null;
     }
 
     public String getUsernameFromToken(String token) {
-        String username;
-
         try {
             final Claims claims = this.getAllClaimsFromToken(token);
-            username = claims.getSubject();
-        } catch (ExpiredJwtException ex) {
-            throw ex;
+            return claims.getSubject();
         } catch (Exception e) {
-            username = null;
+            return null;
         }
-
-        return username;
     }
 
     public Date getIssuedAtDateFromToken(String token) {
-        Date issueAt;
         try {
             final Claims claims = this.getAllClaimsFromToken(token);
-            issueAt = claims.getIssuedAt();
-        } catch (ExpiredJwtException ex) {
-            throw ex;
+            return claims.getIssuedAt();
         } catch (Exception e) {
-            issueAt = null;
+            return null;
         }
-        return issueAt;
     }
 
     public Date getExpirationDateFromToken(String token) {
-        Date expiration;
         try {
             final Claims claims = this.getAllClaimsFromToken(token);
-            expiration = claims.getExpiration();
-        } catch (ExpiredJwtException ex) {
-            throw ex;
+            return claims.getExpiration();
         } catch (Exception e) {
-            expiration = null;
+            return null;
         }
-
-        return expiration;
     }
 
     private Claims getAllClaimsFromToken(String token) {
-        Claims claims;
-        try {
-            claims = Jwts.parser()
-                    .setSigningKey(SECRET)
-                    .parseClaimsJws(token)
-                    .getBody();
-        } catch (ExpiredJwtException ex) {
-            throw ex;
-        } catch (Exception e) {
-            claims = null;
-        }
-
-        return claims;
+        return Jwts.parserBuilder()
+                .setSigningKey(SECRET.getBytes())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 
     public boolean validateToken(String authToken) {
         try {
-            Jwts.parser().setSigningKey(SECRET).parseClaimsJws(authToken);
+            Jwts.parserBuilder().setSigningKey(SECRET.getBytes()).build().parseClaimsJws(authToken);
             return true;
         } catch (JwtException | IllegalArgumentException e) {
             return false;
         }
     }
-
-    private Boolean isCreatedBeforeLastPasswordReset(Date created, Date lastPasswordReset) {
-        return (lastPasswordReset != null && created.before(lastPasswordReset));
-    }
-
-    public int getExpiredIn() {
-        return EXPIRES_IN;
-    }
-
-    public String getAuthHeaderFromHeader(HttpServletRequest request) {
-        return request.getHeader(AUTH_HEADER);
-    }
 }
-

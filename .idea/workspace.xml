@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat : add global exception handling">
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/AsyncService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/DashboardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat: integrate JWT authentication and spring security">
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseGroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeGroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/SecurityUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/SecurityUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/AsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/AsyncService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "yadavpranjay12"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yadavpranjay12&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/yadavpranjay12/SpendSense.git",
-    "accountId": "0ca07f18-ea64-4e66-976e-f6a77c81e784"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yadavpranjay12/SpendSense.git&quot;,
+    &quot;accountId&quot;: &quot;0ca07f18-ea64-4e66-976e-f6a77c81e784&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -47,11 +47,11 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3GmEo6r5WhapFgLIuc3u9lAEgXf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +64,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense"
+    "last_opened_file_path": "C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -136,7 +140,31 @@
       <option name="project" value="LOCAL" />
       <updated>1784572478567</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat : implement synchronous business logic services">
+      <option name="closed" value="true" />
+      <created>1784656261129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784656261129</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat : implement synchronous business logic services">
+      <option name="closed" value="true" />
+      <created>1784656289982</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1784656289982</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: integrate JWT authentication and spring security">
+      <option name="closed" value="true" />
+      <created>1784658226928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1784658226928</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +173,8 @@
     <MESSAGE value="feat : added jpa repositories" />
     <MESSAGE value="feat : added data transfer objects" />
     <MESSAGE value="feat : add global exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : add global exception handling" />
+    <MESSAGE value="feat : implement synchronous business logic services" />
+    <MESSAGE value="feat: integrate JWT authentication and spring security" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: integrate JWT authentication and spring security" />
   </component>
 </project>
