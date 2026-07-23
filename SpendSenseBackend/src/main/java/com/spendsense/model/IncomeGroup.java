@@ -1,16 +1,15 @@
 package com.spendsense.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
 @Getter
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class IncomeGroup {
 

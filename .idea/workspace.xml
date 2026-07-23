@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat: implemented end to end rest controllers for the application">
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/dto/AuthRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/dto/AuthResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseGroupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/ExpenseGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/ExpenseGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/IncomeGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/IncomeGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +64,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yadav\OneDrive\Desktop\SpendSense\SpendSenseBackend\src\main\java\com\spendsense" />
@@ -191,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784744447371</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: implemented end to end rest controllers for the application">
+      <option name="closed" value="true" />
+      <created>1784746272294</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1784746272294</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

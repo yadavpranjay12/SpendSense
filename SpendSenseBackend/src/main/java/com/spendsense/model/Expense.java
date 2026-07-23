@@ -8,6 +8,9 @@ import java.util.UUID;
 
 @Entity
 @Getter
+@Data
+
+@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Expense {

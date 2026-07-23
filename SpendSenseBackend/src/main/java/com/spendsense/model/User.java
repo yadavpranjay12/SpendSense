@@ -1,4 +1,6 @@
 package com.spendsense.model;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,7 +14,9 @@ import java.util.UUID;
 
 @Entity
 @Getter
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class User implements UserDetails {
 
