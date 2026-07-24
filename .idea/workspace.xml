@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat : set up flyway with postgresql - added domain models">
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/dto/ExpenseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/SubscriptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/ExpenseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/dto/IncomeRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/dto/IncomeRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/ExpenseGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/model/ExpenseGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseGroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseGroupRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/IncomeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/IncomeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeService.java" afterDir="false" />
+    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat: upgrade SpendSense with UUID security, full CRUD income/expense edits, SQL budget analytics, and automated recurring subscription cron jobs">
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/SubscriptionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784799000426</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: upgrade SpendSense with UUID security, full CRUD income/expense edits, SQL budget analytics, and automated recurring subscription cron jobs">
+      <option name="closed" value="true" />
+      <created>1784915747857</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1784915747857</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +228,7 @@
     <MESSAGE value="feat: integrate JWT authentication and spring security" />
     <MESSAGE value="feat: implemented end to end rest controllers for the application" />
     <MESSAGE value="feat : set up flyway with postgresql - added domain models" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : set up flyway with postgresql - added domain models" />
+    <MESSAGE value="feat: upgrade SpendSense with UUID security, full CRUD income/expense edits, SQL budget analytics, and automated recurring subscription cron jobs" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: upgrade SpendSense with UUID security, full CRUD income/expense edits, SQL budget analytics, and automated recurring subscription cron jobs" />
   </component>
 </project>
