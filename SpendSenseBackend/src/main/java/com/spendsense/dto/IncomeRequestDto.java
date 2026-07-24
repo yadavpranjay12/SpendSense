@@ -1,21 +1,22 @@
 package com.spendsense.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NonNull;
+import lombok.Setter;
 
-import jakarta.validation.constraints.NotBlank;
 import java.util.UUID;
-
-@AllArgsConstructor
 @Getter
+@Setter
 public class IncomeRequestDto {
-
-    @NotBlank
+    private Double amount;
     private String description;
+    private UUID incomeGroupId; // Secure UUID
 
-    private double amount;
+    public Double getAmount() { return amount; }
+    public void setAmount(Double amount) { this.amount = amount; }
 
-    @NonNull
-    private UUID incomeGroupId;
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
+
+    public UUID getIncomeGroupId() { return incomeGroupId; }
+    public void setIncomeGroupId(UUID incomeGroupId) { this.incomeGroupId = incomeGroupId; }
 }

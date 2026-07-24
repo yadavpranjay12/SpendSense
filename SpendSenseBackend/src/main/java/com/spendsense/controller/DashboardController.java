@@ -1,35 +1,43 @@
 package com.spendsense.controller;
 
-import com.spendsense.service.DashboardService;
+import com.spendsense.model.User;
+import com.spendsense.repository.ExpenseGroupRepository;
+
+import com.spendsense.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/dashboard")
 public class DashboardController {
 
-    private final DashboardService dashboardService;
-
-    public DashboardController(DashboardService dashboardService) {
-        this.dashboardService = dashboardService;
+    private final ExpenseGroupRepository expenseGroupRepository;
+private final UserService userService;
+    public DashboardController(ExpenseGroupRepository expenseGroupRepository, UserService userService) {
+        this.expenseGroupRepository = expenseGroupRepository;
+        this.userService = userService;
     }
-
-    @GetMapping("/summary")
-    public ResponseEntity<Map<String, Object>> getDashboardSummary(Authentication authentication) {
+    @GetMapping("/budgets")
+    public ResponseEntity<?> getBudgetProgress(Authentication authentication) {
+        // 1. Get the username from the security context
         String username = authentication.getName();
-        Map<String, Object> summary = new HashMap<>();
 
-        // Call the 3 specific methods available in your DashboardService
-        summary.put("totalBalance", dashboardService.getTotalAmount(username));
-        summary.put("recentExpenses", dashboardService.getLastFewExpenses(5, username)); // Fetches last 5 expenses
-        summary.put("recentIncomes", dashboardService.getLastFewIncomes(5, username));   // Fetches last 5 incomes
+        // 2. Look up the user ID using your UserService or UserRepository
+        User user = userService.getByUsername(username);
+        UUID userId = user.getId();
 
-        return ResponseEntity.ok(summary);
+        LocalDate now = LocalDate.now();
+        List<Map<String, Object>> budgetReport = expenseGroupRepository
+                .getBudgetReport(userId, now.getMonthValue(), now.getYear());
+
+        return ResponseEntity.ok(budgetReport);
     }
 }

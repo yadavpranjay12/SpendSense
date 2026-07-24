@@ -28,6 +28,9 @@ public class ExpenseGroup {
     @JoinColumn
     @ToString.Exclude
     private User user;
+    @Column(name = "budget_limit")
+    private Double budgetLimit = 0.0; // Default to 0 (no limit)
+
 
     public ExpenseGroup(String name, String description) {
         this.name = name;

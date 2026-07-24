@@ -54,7 +54,12 @@ public class ExpenseService {
         Expense expense = getByIdAndUsername(id, username);
         expense.setDescription(updateDto.getDescription());
         expense.setAmount(updateDto.getAmount());
-        expense.setExpenseGroup(expenseGroupService.getByIdAndUserUsername(updateDto.getExpenseGroupId(), username));
+
+        // Only update the group if it actually changed to save a database call
+        if (!expense.getExpenseGroup().getId().equals(updateDto.getExpenseGroupId())) {
+            expense.setExpenseGroup(expenseGroupService.getByIdAndUserUsername(updateDto.getExpenseGroupId(), username));
+        }
+
         return repository.save(expense);
     }
 
@@ -64,14 +69,20 @@ public class ExpenseService {
     }
 
     public List<Expense> getByExpenseGroupId(UUID expenseGroupId, int size, String username) {
+        // Validates ownership before fetching
         expenseGroupService.getByIdAndUserUsername(expenseGroupId, username);
         return repository.findByExpenseGroupIdOrderByCreationTimeDesc(expenseGroupId, PageRequest.of(0, size));
     }
 
     public Expense getByIdAndUsername(UUID id, String username) {
         User user = userService.getByUsername(username);
+
+        // Ensure it exists first
         repository.findById(id).orElseThrow(() -> new NotFoundException(Expense.class.getSimpleName()));
-        return repository.findByIdAndUser(id, user).orElseThrow(() -> new AccessResourceDeniedException(Expense.class.getSimpleName()));
+
+        // Ensure the logged-in user owns it
+        return repository.findByIdAndUser(id, user)
+                .orElseThrow(() -> new AccessResourceDeniedException(Expense.class.getSimpleName()));
     }
 
     public List<Expense> getExpensesForYesterday(String username) {

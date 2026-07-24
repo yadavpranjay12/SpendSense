@@ -3,12 +3,12 @@ package com.spendsense.controller;
 import com.spendsense.dto.ExpenseRequestDto;
 import com.spendsense.model.Expense;
 import com.spendsense.service.ExpenseService;
-import org.springframework.http.HttpStatus;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
-import jakarta.validation.Valid;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,37 +22,86 @@ public class ExpenseController {
         this.expenseService = expenseService;
     }
 
+
     @PostMapping
-    public ResponseEntity<Expense> createExpense(@RequestBody @Valid ExpenseRequestDto request, Authentication authentication) {
-        Expense expense = new Expense();
-        expense.setAmount(request.getAmount());
-        expense.setDescription(request.getDescription());
+    public ResponseEntity<?> addExpense(@RequestBody ExpenseRequestDto dto, Authentication authentication) {
+        try {
+            // Map the incoming DTO to a new Expense entity
+            Expense newExpense = new Expense();
+            newExpense.setAmount(dto.getAmount());
+            newExpense.setDescription(dto.getDescription());
+            newExpense.setCreationTime(LocalDateTime.now()); // Set timestamp
 
-        Expense saved = expenseService.addNew(expense, request.getExpenseGroupId(), authentication.getName());
-        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+            Expense created = expenseService.addNew(newExpense, dto.getExpenseGroupId(), authentication.getName());
+            return ResponseEntity.ok(created);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Expense> updateExpense(@PathVariable UUID id, @RequestBody @Valid ExpenseRequestDto request, Authentication authentication) {
-        Expense updated = expenseService.update(id, request, authentication.getName());
-        return ResponseEntity.ok(updated);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteExpense(@PathVariable UUID id, Authentication authentication) {
-        expenseService.deleteById(id, authentication.getName());
-        return ResponseEntity.noContent().build();
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Expense> getExpenseById(@PathVariable UUID id, Authentication authentication) {
-        Expense expense = expenseService.getByIdAndUsername(id, authentication.getName());
-        return ResponseEntity.ok(expense);
-    }
 
     @GetMapping
     public ResponseEntity<List<Expense>> getAllExpenses(Authentication authentication) {
-        List<Expense> expenses = expenseService.getAll(authentication.getName());
-        return ResponseEntity.ok(expenses);
+        return ResponseEntity.ok(expenseService.getAll(authentication.getName()));
+    }
+
+
+    @GetMapping("/page")
+    public ResponseEntity<Page<Expense>> getPaginatedExpenses(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            Authentication authentication) {
+        return ResponseEntity.ok(expenseService.getAll(page, size, authentication.getName()));
+    }
+
+
+    @GetMapping("/recent")
+    public ResponseEntity<List<Expense>> getRecentExpenses(
+            @RequestParam(defaultValue = "5") int size,
+            Authentication authentication) {
+        return ResponseEntity.ok(expenseService.getLastFew(size, authentication.getName()));
+    }
+
+    @GetMapping("/yesterday")
+    public ResponseEntity<List<Expense>> getYesterdayExpenses(Authentication authentication) {
+        return ResponseEntity.ok(expenseService.getExpensesForYesterday(authentication.getName()));
+    }
+
+
+    @GetMapping("/group/{groupId}")
+    public ResponseEntity<?> getExpensesByGroup(
+            @PathVariable UUID groupId,
+            @RequestParam(defaultValue = "10") int size,
+            Authentication authentication) {
+        try {
+            List<Expense> expenses = expenseService.getByExpenseGroupId(groupId, size, authentication.getName());
+            return ResponseEntity.ok(expenses);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updateExpense(
+            @PathVariable UUID id,
+            @RequestBody ExpenseRequestDto dto,
+            Authentication authentication) {
+        try {
+            Expense updatedExpense = expenseService.update(id, dto, authentication.getName());
+            return ResponseEntity.ok(updatedExpense);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteExpense(@PathVariable UUID id, Authentication authentication) {
+        try {
+            expenseService.deleteById(id, authentication.getName());
+            return ResponseEntity.ok("Expense deleted successfully.");
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 }

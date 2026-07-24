@@ -12,7 +12,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -51,32 +50,28 @@ public class IncomeService {
     }
 
     public Income update(UUID id, IncomeRequestDto updateDto, String username) throws NotFoundException {
-        Income income = getByIdAndUserUsername(id, username);
+        Income income = getByIdAndUsername(id, username);
         income.setDescription(updateDto.getDescription());
         income.setAmount(updateDto.getAmount());
-        income.setIncomeGroup(incomeGroupService.getByIdAndUserUsername(updateDto.getIncomeGroupId(), username));
+
+        // Update category if it was changed
+        if (!income.getIncomeGroup().getId().equals(updateDto.getIncomeGroupId())) {
+            income.setIncomeGroup(incomeGroupService.getByIdAndUserUsername(updateDto.getIncomeGroupId(), username));
+        }
+
         return repository.save(income);
     }
 
     public void deleteById(UUID id, String username) throws NotFoundException {
-        Income income = getByIdAndUserUsername(id, username);
+        Income income = getByIdAndUsername(id, username);
         repository.delete(income);
     }
 
-    public List<Income> getByIncomeGroupId(UUID incomeGroupId, int size, String username) {
-        incomeGroupService.getByIdAndUserUsername(incomeGroupId, username);
-        return repository.findByIncomeGroupIdOrderByCreationTimeDesc(incomeGroupId, PageRequest.of(0, size));
-    }
-
-    public Income getByIdAndUserUsername(UUID id, String username) {
+    public Income getByIdAndUsername(UUID id, String username) {
         User user = userService.getByUsername(username);
         repository.findById(id).orElseThrow(() -> new NotFoundException(Income.class.getSimpleName()));
-        return repository.findByIdAndUser(id, user).orElseThrow(() -> new AccessResourceDeniedException(Income.class.getSimpleName()));
-    }
 
-    public List<Income> getIncomesForYesterday(String username) {
-        LocalDateTime start = LocalDateTime.now().minusDays(1).withHour(0).withMinute(0).withSecond(0);
-        LocalDateTime end = LocalDateTime.now().minusDays(1).withHour(23).withMinute(59).withSecond(59);
-        return repository.findByUserUsernameAndCreationTimeBetweenOrderByCreationTimeDesc(username, start, end);
+        return repository.findByIdAndUser(id, user)
+                .orElseThrow(() -> new AccessResourceDeniedException(Income.class.getSimpleName()));
     }
 }
