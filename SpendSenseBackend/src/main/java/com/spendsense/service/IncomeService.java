@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -44,7 +45,11 @@ public class IncomeService {
         User user = userService.getByUsername(username);
         return repository.findByUser(user);
     }
-
+    public List<Income> getIncomesForYesterday(String username) {
+        LocalDateTime start = LocalDateTime.now().minusDays(1).withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime end = LocalDateTime.now().minusDays(1).withHour(23).withMinute(59).withSecond(59);
+        return repository.findByUserUsernameAndCreationTimeBetweenOrderByCreationTimeDesc(username, start, end);
+    }
     public List<Income> getLastFew(int size, String username) {
         return repository.findByUserUsernameOrderByCreationTimeDesc(username, PageRequest.of(0, size));
     }

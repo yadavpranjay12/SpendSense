@@ -1,6 +1,9 @@
 package com.spendsense.repository;
 
 import com.spendsense.model.ExpenseGroup;
+import com.spendsense.model.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -13,7 +16,9 @@ import java.util.UUID;
 
 @Repository
 public interface ExpenseGroupRepository extends JpaRepository<ExpenseGroup, UUID> {
-
+    Optional<ExpenseGroup> findByNameAndUser(String name, User user);
+    Page<ExpenseGroup> findByUser(User user, PageRequest pageable);
+    Optional<ExpenseGroup> findByIdAndUser(UUID id, User user);
     Optional<ExpenseGroup> findByIdAndUserUsername(UUID id, String username);
 
     List<ExpenseGroup> findByUserUsername(String username);

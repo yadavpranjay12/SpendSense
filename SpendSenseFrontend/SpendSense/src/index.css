@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom SaaS Blue and Off-White palette for SpendSense */
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-900: #0c4a6e;
+  
+  --color-offwhite: #f8fafc;
+}
+
+body {
+  background-color: var(--color-offwhite);
+}

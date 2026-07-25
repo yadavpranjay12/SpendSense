@@ -36,7 +36,19 @@ public class IncomeController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+    @PostMapping
+    public ResponseEntity<?> addIncome(@RequestBody IncomeRequestDto dto, Authentication authentication) {
+        try {
+            com.spendsense.model.Income newIncome = new com.spendsense.model.Income();
+            newIncome.setAmount(dto.getAmount());
+            newIncome.setDescription(dto.getDescription());
+            newIncome.setCreationTime(java.time.LocalDateTime.now());
 
+            com.spendsense.model.Income created = incomeService.addNew(newIncome, dto.getIncomeGroupId(), authentication.getName());
+            return ResponseEntity.ok(created);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }}
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteIncome(@PathVariable UUID id, Authentication authentication) {
         try {
