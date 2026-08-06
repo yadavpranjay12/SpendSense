@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat : dockerized the Spring Boot backend of the application">
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Categories.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asdf2026-08-04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asdfgh2026-08-04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pranjay2026-08-04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pranjet1205@gmail.com2026-08-04.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786031346818</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat : dockerized the Spring Boot backend of the application">
+      <option name="closed" value="true" />
+      <created>1786033191482</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1786033191482</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
