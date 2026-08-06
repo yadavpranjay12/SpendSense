@@ -4,9 +4,9 @@ services:
     container_name: spendsense-db
 
     environment:
-      POSTGRES_DB: spendsense
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL:-jdbc:postgresql://postgres:5432/spendsense}
+      SPRING_DATASOURCE_USERNAME: ${DBUSERNAME:-postgres}
+      SPRING_DATASOURCE_PASSWORD: ${DBPASSWORD:-password}
 
     ports:
       - "5433:5432"
