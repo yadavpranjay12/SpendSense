@@ -4,734 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat: added subscription controller">
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/public/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/public/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/assets/hero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/assets/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/context/CurrencyContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/AddTransaction.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/ManageCategories.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Subscriptions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/TransactionHistory.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/services/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/jiti" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/jiti.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/jiti.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/nanoid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/nanoid.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/nanoid.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/rolldown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/rolldown.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/rolldown.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/vite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/vite.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.bin/vite.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.cjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.cjs.min.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.cjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.esm-bundler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.min.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.min.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/dist/emnapi-core.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.cjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.cjs.min.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.cjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.esm-bundler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.iife.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.iife.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.min.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.min.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/dist/emnapi.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/runtime/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.min.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.esm-bundler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/dist/wasi-threads.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@emnapi/wasi-threads/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/types/gen-mapping.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/types/set-array.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/types/sourcemap-segment.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/dist/types/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/src/gen-mapping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/src/set-array.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/src/sourcemap-segment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/src/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/set-array.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/set-array.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/set-array.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/set-array.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/types.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/types.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/types.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/gen-mapping/types/types.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/dist/remapping.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/dist/remapping.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/dist/remapping.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/dist/remapping.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/src/build-source-map-tree.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/src/remapping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/src/source-map-tree.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/src/source-map.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/src/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/remapping.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/remapping.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/remapping.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/remapping.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map-tree.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map-tree.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map-tree.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map-tree.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/source-map.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/types.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/types.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/types.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/remapping/types/types.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/dist/types/resolve-uri.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/resolve-uri/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/src/scopes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/src/sourcemap-codec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/src/strings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/src/vlq.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/strings.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/strings.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/strings.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/strings.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/binary-search.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/by-source.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/flatten-map.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/resolve.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/sort.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/sourcemap-segment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/strip-filename.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/trace-mapping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/src/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/binary-search.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/binary-search.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/binary-search.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/binary-search.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/by-source.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/by-source.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/by-source.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/by-source.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/resolve.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/resolve.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/resolve.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/resolve.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sort.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sort.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sort.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sort.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/types.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/types.d.cts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/types.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@jridgewell/trace-mapping/types/types.d.mts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/dist/fs-proxy.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/dist/fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/fs-proxy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/runtime.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@napi-rs/wasm-runtime/runtime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@oxc-project/types/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@oxc-project/types/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@oxc-project/types/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@oxc-project/types/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/binding-win32-x64-msvc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/binding-win32-x64-msvc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/binding-win32-x64-msvc/rolldown-binding.win32-x64-msvc.node" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/dist/filter-B_mD-HGz.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/dist/filter/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/dist/filter/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@rolldown/pluginutils/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/esm-cache.loader.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/require-cache.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/dist/require-cache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/node/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide-win32-x64-msvc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide-win32-x64-msvc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/oxide/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/vite/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/vite/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/vite/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/vite/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tailwindcss/vite/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/tsdoc-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.esm-bundler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/dist/wasm-util.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/asyncify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/jspi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/memory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/fd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/preview1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/rights.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/wasi/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/cjs/webassembly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/asyncify.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/jspi.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/load.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/memory.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/error.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/fd.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/fs.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/path.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/preview1.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/rights.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/types.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/wasi/util.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/lib/mjs/webassembly.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/@tybys/wasm-util/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/lib/detect-libc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/lib/elf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/lib/filesystem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/lib/process.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/detect-libc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/AliasPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/AliasUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/AppendPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ConditionalPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ExportsFieldPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ExtensionAliasPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ImportsFieldPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/JoinRequestPartPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ModulesInHierarchicalDirectoriesPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ModulesUtils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/NextPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ParsePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/PnpPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/Resolver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ResolverFactory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/RestrictionsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/ResultPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/RootsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/SelfReferencePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/TryNextPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/TsconfigPathsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/UseFilePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/createInnerContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/forEachBail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/getInnerRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/getPaths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/entrypoints.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/fileURLToPath.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/graceful-fs-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/identifier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/memoize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/module-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/path-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/process-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/strip-json-comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/lib/util/url-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/enhanced-resolve/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/dist/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/dist/index.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/fdir/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/clone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/graceful-fs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/legacy-streams.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/graceful-fs/polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/dist/babel.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/dist/jiti.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-cli.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-hooks.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-native.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-register.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-register.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti-static.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/jiti.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/lib/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/jiti/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss-win32-x64-msvc/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss-win32-x64-msvc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss-win32-x64-msvc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/ast.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/ast.js.flow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/browserslistToTargets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/composeVisitors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/flags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/index.js.flow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/targets.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/node/targets.js.flow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/lightningcss/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.cjs.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.cjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.cjs.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.es.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.es.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.es.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/dist/magic-string.umd.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/magic-string/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.browser.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/index.native.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/async/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/bin/nanoid.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.browser.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/nanoid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/non-secure/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/non-secure/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/non-secure/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/non-secure/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/url-alphabet/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/url-alphabet/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/nanoid/url-alphabet/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/picocolors.browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/picocolors.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/picocolors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picocolors/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/lib/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/lib/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/lib/picomatch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/lib/scan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/lib/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/picomatch/posix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/at-rule.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/at-rule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/comment.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/container.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/css-syntax-error.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/css-syntax-error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/declaration.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/declaration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/document.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/fromJSON.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/fromJSON.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/input.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/lazy-result.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/lazy-result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/list.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/map-generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/no-work-result.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/no-work-result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/node.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/parse.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/postcss.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/postcss.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/postcss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/postcss.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/previous-map.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/previous-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/processor.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/processor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/result.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/root.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/root.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/rule.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/rule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/stringifier.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/stringifier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/stringify.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/stringify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/symbols.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/terminal-highlight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/tokenize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/warn-once.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/warning.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/lib/warning.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/postcss/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/bin/cli.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/cli.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/cli.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/config.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/experimental-index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/experimental-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/experimental-runtime-types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/filter-index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/filter-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/get-log-filter.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/get-log-filter.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parallel-plugin-worker.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parallel-plugin-worker.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parallel-plugin.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parallel-plugin.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parse-ast-index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/parse-ast-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/plugins-index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/plugins-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/binding-D26QphWG.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/binding-TuFFIE_J.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/bindingify-input-options-XPJLJOD0.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/constructors-BbWPse2X.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/constructors-D_3i7dpX.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/define-config-BhJ90aEv.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/define-config-Demdg3_4.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/dist-DKbukT1H.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/error-BHRSI0R7.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/get-log-filter-BpNVNJ5-.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/load-config-BL_FI6dc.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/logging-BSNejiLS.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/logs-ZGEh6uhb.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/misc-CoQm4NHO.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/normalize-string-or-regex-dnh67V_w.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/parse-D4dtlfWy.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/prompt--dNycKSZ.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/resolve-tsconfig-DxqIJB3x.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/rolldown-ChpIlMRm.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/rolldown-build-CtPvmZgJ.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/transform-BPrUvqEZ.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/shared/watch-B1b0gmVh.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/utils-index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/dist/utils-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/rolldown/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/array-set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/base64-vlq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/base64.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/binary-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/mapping-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/quick-sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-map-consumer.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-map-consumer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-map-generator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-map-generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-node.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/source-node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/lib/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/source-map.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/source-map-js/source-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/chunk-5JIJA4QV.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/chunk-C2OYBFIH.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/chunk-DCG7AFIE.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/colors-C__qRT83.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/colors.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/colors.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/colors.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/default-theme.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/default-theme.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/default-theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/default-theme.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/flatten-color-palette.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/flatten-color-palette.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/flatten-color-palette.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/flatten-color-palette.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/lib.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/lib.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/lib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/lib.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/plugin.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/plugin.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/plugin.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/resolve-config-B4yBzhca.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/resolve-config-QUZ9b-Gn.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/dist/types-DWdTiksJ.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/preflight.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tailwindcss/utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncParallelBailHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncParallelHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncSeriesBailHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncSeriesHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncSeriesLoopHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/AsyncSeriesWaterfallHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/Hook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/HookCodeFactory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/HookMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/MultiHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/SyncBailHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/SyncHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/SyncLoopHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/SyncWaterfallHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/lib/util-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tapable/tapable.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/dist/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/dist/index.d.cts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/dist/index.d.mts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tinyglobby/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/CopyrightNotice.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/modules/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/modules/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/modules/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.es6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.es6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.es6.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/tslib/tslib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/bin/openChrome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/bin/vite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/client.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/client/client.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/client/env.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/dist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/lib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/moduleRunnerTransport.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/chunks/postcss-import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/cli.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/internal.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/internal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/module-runner.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/dist/node/module-runner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/misc/false.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/misc/true.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/customEvent.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/hmrPayload.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/hot.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/import-meta.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/importGlob.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/importMeta.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/internal/cssPreprocessorOptions.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/internal/esbuildOptions.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/internal/lightningcssOptions.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/internal/rollupTypeCompat.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/internal/terserOptions.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/node_modules/vite/types/metadata.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpendSenseFrontend/package.json" afterDir="false" />
+    <list default="true" id="92006684-4116-42f5-a4d6-b8ea0964ea7a" name="Changes" comment="feat: implemented frontend for the application">
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpendSenseBackend/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/controller/IncomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseGroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/ExpenseGroupRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/IncomeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/repository/IncomeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/ExpenseGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/java/com/spendsense/service/IncomeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseBackend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/Subscriptions.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/TransactionHistory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SpendSenseFrontend/SpendSense/src/pages/TransactionHistory.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -742,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -778,25 +60,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Maven.demo [clean].executor": "Run",
+    "Maven.demo [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/yadav/OneDrive/Desktop/SpendSense/SpendSenseBackend/src/main/java/com/spendsense",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yadav\OneDrive\Desktop\SpendSense\SpendSenseBackend\src\main\java\com\spendsense" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn package" />
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -950,7 +240,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784916881886</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: implemented frontend for the application">
+      <option name="closed" value="true" />
+      <created>1785004899844</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1785004899844</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: implemented frontend for the application">
+      <option name="closed" value="true" />
+      <created>1785004920394</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1785004920394</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -964,6 +270,8 @@
     <MESSAGE value="feat : set up flyway with postgresql - added domain models" />
     <MESSAGE value="feat: upgrade SpendSense with UUID security, full CRUD income/expense edits, SQL budget analytics, and automated recurring subscription cron jobs" />
     <MESSAGE value="feat: added subscription controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added subscription controller" />
+    <MESSAGE value="feat: implemented react frontend for the application" />
+    <MESSAGE value="feat: implemented frontend for the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented frontend for the application" />
   </component>
 </project>

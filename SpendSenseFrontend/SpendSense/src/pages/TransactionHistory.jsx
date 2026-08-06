@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import api from '../services/api';
 import { useCurrency } from '../context/CurrencyContext';
 
@@ -10,16 +10,15 @@ const TransactionHistory = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     
-    // Filtering State (Defaults to current month and year)
+    // Filtering State
     const currentMonth = new Date().getMonth();
     const currentYear = new Date().getFullYear();
     const [selectedMonth, setSelectedMonth] = useState(currentMonth);
     const [selectedYear, setSelectedYear] = useState(currentYear);
     
     const { convert, symbol } = useCurrency();
-    const navigate = useNavigate();
 
-    // 1. Fetch all transactions from the backend
+    // Fetch all transactions from the backend
     const fetchTransactions = async () => {
         try {
             const [expenseRes, incomeRes] = await Promise.all([
@@ -47,15 +46,13 @@ const TransactionHistory = () => {
         fetchTransactions();
     }, []);
 
-    // 2. The Filter Logic: Runs whenever data or dropdowns change
+    // Filter Logic based on dropdowns
     useEffect(() => {
         if (selectedMonth === 'all') {
-            // Show the whole year
             setFilteredTransactions(transactions.filter(tx => 
                 new Date(tx.creationTime).getFullYear() === parseInt(selectedYear)
             ));
         } else {
-            // Filter by specific month AND year
             setFilteredTransactions(transactions.filter(tx => {
                 const txDate = new Date(tx.creationTime);
                 return txDate.getMonth() === parseInt(selectedMonth) && 
@@ -64,22 +61,22 @@ const TransactionHistory = () => {
         }
     }, [transactions, selectedMonth, selectedYear]);
 
+    // Handle Deleting a Transaction (Kept for MVP)
     const handleDelete = async (id, type) => {
         if (!window.confirm(`Are you sure you want to delete this ${type}?`)) return;
         try {
             await api.delete(type === 'expense' ? `/expenses/${id}` : `/incomes/${id}`);
-            fetchTransactions();
+            fetchTransactions(); // Refresh the list
         } catch (err) {
             alert('Failed to delete the transaction.');
         }
     };
 
-    // Arrays for generating the dropdown options
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const years = [currentYear, currentYear - 1, currentYear - 2];
 
     return (
-        <div className="min-h-screen bg-offwhite font-sans py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-offwhite font-sans py-12 px-4 sm:px-6 lg:px-8 relative">
             <div className="max-w-5xl mx-auto">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-8">
@@ -142,11 +139,10 @@ const TransactionHistory = () => {
                                         <th className="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Description</th>
                                         <th className="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase">Category</th>
                                         <th className="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Amount</th>
-                                        <th className="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Actions</th>
+                                        <th className="px-6 py-3 text-right text-xs font-bold text-gray-500 uppercase">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody className="bg-white divide-y divide-gray-200">
-                                    {/* Notice we map over filteredTransactions, not all transactions */}
                                     {filteredTransactions.map((tx) => (
                                         <tr key={`${tx.type}-${tx.id}`} className="hover:bg-gray-50 transition-colors">
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -164,7 +160,7 @@ const TransactionHistory = () => {
                                                 </span>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex justify-end gap-3">
-                                                {/* Edit logic can go here if you added the modal! */}
+                                                {/* ONLY Delete button remains */}
                                                 <button onClick={() => handleDelete(tx.id, tx.type)} className="text-red-600 hover:text-red-900 transition-colors">
                                                     Delete
                                                 </button>

@@ -5,7 +5,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import AddTransaction from './pages/AddTransaction';
 import ManageCategories from './pages/ManageCategories'; // Import it here
-import Subscription from './pages/Subscriptions';
+
 function App() {
   return (
     <Routes>
@@ -14,7 +14,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/add-transaction" element={<AddTransaction />} />
-      <Route path="/subscriptions" element={<Subscription />} />
+     
       <Route path="/history" element={<History />} />
       <Route path="/categories" element={<ManageCategories />} /> {/* Add the route */}
     </Routes>
