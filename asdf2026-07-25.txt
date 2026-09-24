@@ -1,5 +1,0 @@
-USER : asdf
-Report for : 2026-07-25
-Expense amount : 5050.0
-Income amount : 0.0
-Total amount : -5050.0
